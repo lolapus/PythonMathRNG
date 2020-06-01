@@ -4,7 +4,7 @@
 ## Installation
 You need to install `uptime` and `psutil` for the program to work correctly. If you want to use the `randomImage` function you need to also install `Pillow`
 
-## Running
+## Usage
 The `RNG.py` file needs to be placed in your working directory and then you can add `import RNG` at the top of your script to make the RNG functions available for use.
 
 ## Security

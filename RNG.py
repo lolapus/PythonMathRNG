@@ -26,9 +26,9 @@ def RNG(numrange, seed=0):
         raise ValueError("The seed is not greater than 0")
     else:
         if seed > 0:
-            return math.fabs(numrange)*(math.sin(math.pow(20*seed, math.pi))*math.sin(math.pow(4*seed, math.e)))
+            return math.fabs(numrange) * (math.sin(math.pow(20 * seed, math.pi)) * math.sin(math.pow(4 * seed * numrange, math.e)))
         else:
-            return math.fabs(numrange) * (math.sin(math.pow(20 * mainTime, math.pi)) * math.sin(math.pow(4 * mainTime, math.e)))
+            return math.fabs(numrange) * (math.sin(math.pow(20 * mainTime, math.pi)) * math.sin(math.pow(4 * mainTime * numrange, math.e)))
 
 
 # Returns a table of random numbers
@@ -58,4 +58,3 @@ def randomImage(sizeX, sizeY, seed=0):
             else:
                 im.putpixel((x, y), ImageColor.getcolor('black', '1'))
     return im
-
